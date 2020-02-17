@@ -1,4 +1,15 @@
+#global-navigation.navbar{background: #b3b3b3 !important;}
+#global-navigation .explore-course{clear: both; padding-top: 10px;}
+#global-navigation .explore-course .btn{color: #fff;background-color: #5bc0de;border-color: #46b8da;}
+#global-navigation .explore-course .btn:hover, #global-navigation .explore-course .btn:focus{color: #fff;background-color: #39b3d7;border-color: #269abc;}
+#global-navigation .header-btns-login .btn{line-height: 15px;margin-left: 5px; height: 30px;}
+.feature-wrap{min-height: 210px;}
+.services-wrap {min-height: 332px;}
+.feature-wrap h3, .media-body p{text-align: justify;}
 .wrapper-footer footer#footer-openedx .wrapper-logo img{width: 20%;}
+#footer{background: #b3b3b3}
 #footer img{width: 30%;}
+#footer .pull-right a, #footer .copyright a{color: #000;}
+#footer .copyright {text-align: center;color: #000;}
 #global-navigation .logo.pull-left img{width: 100%;}
 #global-navigation .authenticated.header-btns, #global-navigation .header-btns-login{margin-top: 25px;}

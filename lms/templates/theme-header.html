@@ -65,6 +65,7 @@ site_status_msg = get_site_status_msg(course_id)
           <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <%block name="navigation_dropdown_menu_links" >
+            <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
             <li><a href="${reverse('account_settings')}">${_("Account Settings")}</a></li>
             <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("My Profile")}</a></li>
             </%block>

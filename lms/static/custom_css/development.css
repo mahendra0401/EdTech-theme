@@ -1,4 +1,4 @@
-#global-navigation.navbar{background: #b3b3b3 !important;}
+#global-navigation.navbar{background: #ffffff !important; border-bottom: 2px solid #000;}
 #global-navigation .explore-course{clear: both; padding-top: 10px;}
 #global-navigation .explore-course .btn{color: #fff;background-color: #5bc0de;border-color: #46b8da;}
 #global-navigation .explore-course .btn:hover, #global-navigation .explore-course .btn:focus{color: #fff;background-color: #39b3d7;border-color: #269abc;}
@@ -16,10 +16,32 @@
 #global-navigation .logo.pull-left img{width: 100%;}
 #global-navigation .authenticated.header-btns, #global-navigation .header-btns-login{margin-top: 25px;}
 body.all-courses .content-wrapper{padding: 0; margin-top: 0;}
-#global-navigation .explore-course.authenticated{clear: initial; padding-top: 35px; padding-right: 10px;}
+#global-navigation .explore-course.authenticated{clear: initial; padding-right: 10px; float: right;}
 #global-navigation .explore-course.authenticated .btn{padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.428571429;text-align: center;}
-@media (min-width: 1200px){
+
+@media (min-width: 992px){
+	#global-navigation .explore-course.authenticated{
+		padding-top: 35px;
+	}
 	#global-navigation .dropdown-toggle{
 		margin-top: 35px;
+	}
+}
+
+@media (min-width: 1200px){
+	#global-navigation .explore-course.authenticated{
+		padding-top: 35px;
+	}
+	#global-navigation .dropdown-toggle{
+		margin-top: 35px;
+	}
+}
+
+@media (min-width: 1400px){
+	#global-navigation .explore-course.authenticated{
+		padding-top: 40px;
+	}
+	#global-navigation .dropdown-toggle {
+    	margin-top: 40px;
 	}
 }

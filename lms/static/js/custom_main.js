@@ -1,11 +1,4 @@
 jQuery(function($) {'use strict',
-	//#main-slider
-	$(function(){
-		$('#main-slider.carousel').carousel({
-			interval: 2000
-		});
-	});
-
 
 	// accordian
 	$('.accordion-toggle').on('click', function(){

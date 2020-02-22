@@ -362,7 +362,7 @@ input.search-form:hover {
 **************************/
 
 
-#main-slider {
+#main-slider-1 {
   position: relative;
 }
 
@@ -371,15 +371,15 @@ input.search-form:hover {
   padding: 0;
 }
 
-#main-slider .carousel .carousel-content {
+#main-slider-1 .carousel .carousel-content {
   margin-top: 150px;
 }
 
-#main-slider .carousel h2 {
+#main-slider-1 .carousel h2 {
   color: #fff;
 }
 
-#main-slider .carousel .btn-slide {
+#main-slider-1 .carousel .btn-slide {
   padding: 8px 20px;
   background: #c52d2f;
   color: #fff;
@@ -388,13 +388,13 @@ input.search-form:hover {
   display: inline-block;
 }
 
-#main-slider .carousel .slider-img{
+#main-slider-1 .carousel .slider-img{
   text-align: right;
   position: absolute;
 }
 
 
-#main-slider .carousel .item {
+#main-slider-1 .carousel .item {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,12 +411,12 @@ input.search-form:hover {
   transition: opacity ease-in-out 500ms;
 }
 
-#main-slider .carousel .item:first-child {
+#main-slider-1 .carousel .item:first-child {
   top: auto;
   position: relative;
 }
 
-#main-slider .carousel .item.active {
+#main-slider-1 .carousel .item.active {
   opacity: 1;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
@@ -425,8 +425,8 @@ input.search-form:hover {
   z-index: 1;
 }
 
-#main-slider .prev,
-#main-slider .next {
+#main-slider-1 .prev,
+#main-slider-1 .next {
   position: absolute;
   top: 50%;
   background-color: #c52d2f;
@@ -442,20 +442,20 @@ input.search-form:hover {
   z-index: 5;
 }
 
-#main-slider .prev:hover,
-#main-slider .next:hover {
+#main-slider-1 .prev:hover,
+#main-slider-1 .next:hover {
   background-color: #000;
 }
 
-#main-slider .prev {
+#main-slider-1 .prev {
   left: 10px;
 }
 
-#main-slider .next {
+#main-slider-1 .next {
   right: 10px;
 }
 
-#main-slider .carousel-indicators li {
+#main-slider-1 .carousel-indicators li {
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -463,7 +463,7 @@ input.search-form:hover {
   position: relative;
 }
 
-#main-slider .carousel-indicators li:after {
+#main-slider-1 .carousel-indicators li:after {
   position: absolute;
   content: "";
   width: 24px;
@@ -475,7 +475,7 @@ input.search-form:hover {
   top: -3px;
 }
 
-#main-slider .carousel-indicators .active{
+#main-slider-1 .carousel-indicators .active{
   width: 20px;
   height: 20px;
   background-color: #c52d2f;
@@ -484,7 +484,7 @@ input.search-form:hover {
    position: relative;
 }
 
-#main-slider .carousel-indicators .active:after {
+#main-slider-1 .carousel-indicators .active:after {
   position: absolute;
   content: "";
   width: 24px;
@@ -496,7 +496,7 @@ input.search-form:hover {
   top: -3px;
 }
 
-#main-slider .active .animation.animated-item-1 {
+#main-slider-1 .active .animation.animated-item-1 {
   -webkit-animation: fadeInUp 300ms linear 300ms both;
   -moz-animation: fadeInUp 300ms linear 300ms both;
   -o-animation: fadeInUp 300ms linear 300ms both;
@@ -504,7 +504,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 300ms both;
 }
 
-#main-slider .active .animation.animated-item-2 {
+#main-slider-1 .active .animation.animated-item-2 {
   -webkit-animation: fadeInUp 300ms linear 600ms both;
   -moz-animation: fadeInUp 300ms linear 600ms both;
   -o-animation: fadeInUp 300ms linear 600ms both;
@@ -512,7 +512,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 600ms both;
 }
 
-#main-slider .active .animation.animated-item-3 {
+#main-slider-1 .active .animation.animated-item-3 {
   -webkit-animation: fadeInUp 300ms linear 900ms both;
   -moz-animation: fadeInUp 300ms linear 900ms both;
   -o-animation: fadeInUp 300ms linear 900ms both;
@@ -520,7 +520,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 900ms both;
 }
 
-#main-slider .active .animation.animated-item-4 {
+#main-slider-1 .active .animation.animated-item-4 {
   -webkit-animation: fadeInUp 300ms linear 1200ms both;
   -moz-animation: fadeInUp 300ms linear 1200ms both;
   -o-animation: fadeInUp 300ms linear 1200ms both;

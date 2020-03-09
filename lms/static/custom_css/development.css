@@ -44,6 +44,8 @@ body.view-login_register .content-wrapper{padding: 0px; margin: 0; max-width: 10
 #login-and-registration-container .register-form .select-level_of_education .label-text{color: #fff;}
 
 
+.certificate-card.mode-honor .card-logo{background-image: url(../images/certification_logo.png); background-position: center; background-repeat: no-repeat; background-size: cover;}
+
 @media (min-width: 992px){
 	#global-navigation .explore-course.authenticated{
 		padding-top: 35px;

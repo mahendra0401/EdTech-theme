@@ -46,6 +46,29 @@ body.view-login_register .content-wrapper{padding: 0px; margin: 0; max-width: 10
 
 .certificate-card.mode-honor .card-logo{background-image: url(../images/certification_logo.png); background-position: center; background-repeat: no-repeat; background-size: cover;}
 
+/*Dashboard page design*/
+body.view-dashboard .content-wrapper{background: #F8F8F8;margin-top: 0; max-width: 100%}
+#dashboard article{box-sizing: border-box;transition: all 0.125s linear 0s;position: relative;background: #fff;width: 100%;border-radius: 0;margin-bottom: 30px;}
+#dashboard article a {position: relative;display: block;}
+#dashboard article a:hover, #dashboard article a:focus{text-decoration: none;outline: 2px solid #646464;border: 0;}
+#dashboard article .course-image .cover-image .learn-more {left: calc(50% - 100px);box-sizing: border-box;position: absolute;top: 55px;padding: 0 20px;width: 200px;height: 50px;border-color: #0075b4;border-radius: 3px;background: #0075b4;color: #fff;line-height: 50px;text-align: center;opacity: 0;z-index: 100;text-transform: none;}
+#dashboard article .course-image .cover-image {height: 160px;overflow: hidden;}
+#dashboard article .course-image .cover-image::before {left: 0;position: absolute;top: 0;opacity: 0;background: #000;width: 100%;height: 160px;content: '';z-index: 10;}
+#dashboard article:hover .cover-image::before, #dashboard article:focus .cover-image::before {transition: opacity 0.25s ease-out 0.25s;opacity: 0.6;}
+#dashboard article .course-image .cover-image img {width: 100%;height: auto;}
+#dashboard article .banner{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;top: -moz-calc(130px - 18px);top: -webkit-calc(130px - 18px);top: calc(130px - 18px);position: absolute;height: 18px;width: 100%;background: #080;color: white;line-height: 18px;font-weight: bold;font-size: 0.7em;text-align: right;text-transform: uppercase;}
+#dashboard article .banner{background: #080;padding-right: 54px;top: 142px;}
+#dashboard article .banner::after{content: '';width: 34px;height: 45px;position: absolute;top: 0;right: 15px;background: url(../images/verified.png) -8px -6px no-repeat;}
+#dashboard article .course-info {height: 200px;font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;border-bottom: 3px solid #080;}
+#dashboard article .course-info h2{margin-top: 0;font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;}
+#dashboard article .course-info .course-code {line-height: 23.68px;padding: 0 15px;}
+#dashboard article .course-info .course-organization {line-height: 16.28px;padding: 10px 15px 2px 15px;}
+#dashboard article .course-info .course-organization,
+#dashboard article .course-info .course-code,
+#dashboard article .course-info .course-title{display: block;text-transform: none;color: #474747;font-size: 14px;}
+#dashboard article .course-info .course-title {padding: 0 15px;color: #3d3e3f;margin: 0;margin: 5px 0 35px 0;padding: 0 15px;font-size: 18px;font-weight: normal;line-height: 1.333; height: 100px;-webkit-line-clamp: 2;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;}
+#dashboard article .course-info .course-date {line-height: 20.72px;padding: 2px 15px;color: #474747;font-size: 14px;}
+
 @media (min-width: 992px){
 	#global-navigation .explore-course.authenticated{
 		padding-top: 35px;

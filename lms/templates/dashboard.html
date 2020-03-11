@@ -66,7 +66,7 @@ from student.models import CourseEnrollment
 
 </div>
 
-<div class="wrap-inner">
+<div class="wrap-inner" id="dashboard">
   <div class="container">
     <h2 class="course_main_title">My Courses</h2>
     <section class="mycourse_grid_sec catalog_grid">
@@ -127,55 +127,44 @@ from student.models import CourseEnrollment
           %>
           <div class="col-md-4 col-sm-6 col-xs-6 ">
             <% course_target = reverse(course_home_url_name(course_overview.id), args=[unicode(course_overview.id)]) %>
-            <div class="mycourse_block" style="background-image: url(${course_overview.image_urls['small']})">
-              % if course_overview.start:
-                <span class="date">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i>Course Start: ${course_overview.start.strftime("%d %b %Y")}
-                </span>
-              %endif
-              
-              % if course_overview.end:
-                <span class="date end_date">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i>Course End: ${course_overview.end.strftime("%d %b %Y")}
-                </span>
-              %endif
-              <div class="mycourse_info">
-                <h2 class="mycourse_title">
-                  % if show_courseware_link and not is_unfulfilled_entitlement:
-                    % if not is_course_blocked:
-                      <a href="${course_target}" title="${course_overview.display_name_with_default}">${course_overview.display_name_with_default}</a>
-                    % else:
-                       <a href="" title="${course_overview.display_name_with_default}">${course_overview.display_name_with_default}</a>
-                    % endif
-                  % else:
-                      <a title="${course_overview.display_name_with_default}">${course_overview.display_name_with_default}</a>
-                  % endif
-                </h2>
-                <!-- <p>Lorem Ipsum</p> -->
-                <ul class="list-unstyled course-list">
-                  <li>${course_overview.display_number_with_default}</li>
-                  <li>${course_overview.display_org_with_default}</li>
-                  <li>${course_overview.id.run}</li>
-                </ul>
+              <article class="course" role="region" aria-label="${course_overview.display_name_with_default}">
                 % if show_courseware_link or is_unfulfilled_entitlement:
                   % if course_overview.has_ended():
                     % if not is_course_blocked:
-                      <div class="course_action text-right"><a href="${course_target}" class="btn btn-theme btn-theme-white text-capitalize">View Archived Course</a></div>
+                      <a href="${course_target}">
                     % else:
-                      <div class="course_action text-right"><a href="" class="btn btn-theme btn-theme-white text-capitalize">View Archived Course</a></div>
+                      <a href="">
                     % endif
                   % else:
                     % if resume_button_url != '':
-                      <div class="course_action text-right"><a href="${resume_button_url}" class="btn btn-theme btn-theme-white text-capitalize">Resume Course</a></div>
+                      <a href="${resume_button_url}">
                     % elif not is_course_blocked:
-                      <div class="course_action text-right"><a href="${course_target}" class="btn btn-theme btn-theme-white text-capitalize">View Course</a></div>
+                      <a href="${course_target}">
                     % else:
-                      <div class="course_action text-right"><a href="" class="btn btn-theme btn-theme-white text-capitalize">View Course</a></div>
+                      <a href="">
                     % endif
                   % endif
-                % endif                
-              </div> 
-            </div>
+                % endif 
+                      <header class="course-image">
+                          <div class="cover-image">
+                              <img src="${course_overview.image_urls['small']}" alt="${course_overview.display_name_with_default}">
+                              <div class="learn-more" aria-hidden="true">LEARN MORE</div>
+                          </div>
+                      </header>
+                      <div class="banner">Verified</div>
+                      <section class="course-info" aria-hidden="true">
+                          <h2 class="course-name">
+                              <span class="course-organization">${course_overview.display_org_with_default}</span>
+                              <span class="course-title">${course_overview.display_name_with_default}</span>
+                          </h2>
+                          % if course_overview.start:
+                            <div class="course-date" aria-hidden="true">
+                                Starts: ${course_overview.start.strftime("%b %d, %Y")}
+                            </div>
+                          % endif
+                      </section>
+                  </a>
+              </article>
           </div>
         % endfor
       % else:

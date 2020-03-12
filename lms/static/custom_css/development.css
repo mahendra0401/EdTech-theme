@@ -56,9 +56,9 @@ body.view-dashboard .content-wrapper{background: #F8F8F8;margin-top: 0; max-widt
 #dashboard article .course-image .cover-image::before {left: 0;position: absolute;top: 0;opacity: 0;background: #000;width: 100%;height: 160px;content: '';z-index: 10;}
 #dashboard article:hover .cover-image::before, #dashboard article:focus .cover-image::before {transition: opacity 0.25s ease-out 0.25s;opacity: 0.6;}
 #dashboard article .course-image .cover-image img {width: 100%;height: auto;}
-#dashboard article .banner{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;top: -moz-calc(130px - 18px);top: -webkit-calc(130px - 18px);top: calc(130px - 18px);position: absolute;height: 18px;width: 100%;background: #080;color: white;line-height: 18px;font-weight: bold;font-size: 0.7em;text-align: right;text-transform: uppercase;}
-#dashboard article .banner{background: #080;padding-right: 54px;top: 142px;}
-#dashboard article .banner::after{content: '';width: 34px;height: 45px;position: absolute;top: 0;right: 15px;background: url(../images/verified.png) -8px -6px no-repeat;}
+#dashboard article .banner, .courses-container .courses .course .banner{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;top: -moz-calc(130px - 18px);top: -webkit-calc(130px - 18px);top: calc(130px - 18px);position: absolute;height: 18px;width: 100%;background: #080;color: white;line-height: 18px;font-weight: bold;font-size: 0.7em;text-align: right;text-transform: uppercase;}
+#dashboard article .banner, .courses-container .courses .course .banner{background: #080;padding-right: 54px;top: 142px;}
+#dashboard article .banner::after, .courses-container .courses .course .banner::after{content: '';width: 34px;height: 45px;position: absolute;top: 0;right: 15px;background: url(../images/verified.png) -8px -6px no-repeat;}
 #dashboard article .course-info {height: 200px;font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;border-bottom: 3px solid #080;}
 #dashboard article .course-info h2{margin-top: 0;font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;}
 #dashboard article .course-info .course-code {line-height: 23.68px;padding: 0 15px;}
@@ -68,6 +68,13 @@ body.view-dashboard .content-wrapper{background: #F8F8F8;margin-top: 0; max-widt
 #dashboard article .course-info .course-title{display: block;text-transform: none;color: #474747;font-size: 14px;}
 #dashboard article .course-info .course-title {padding: 0 15px;color: #3d3e3f;margin: 0;margin: 5px 0 35px 0;padding: 0 15px;font-size: 18px;font-weight: normal;line-height: 1.333; height: 100px;-webkit-line-clamp: 2;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;}
 #dashboard article .course-info .course-date {line-height: 20.72px;padding: 2px 15px;color: #474747;font-size: 14px;}
+
+/*Courses page layout desing*/
+.courses-container .courses .course{box-shadow: none;border: none;border-bottom: 3px solid #080;}
+.highlighted-courses .courses .course a:hover, .find-courses .courses .course a:hover,
+.highlighted-courses .courses .course a:focus, .find-courses .courses .course a:focus{text-decoration: none;outline: 2px solid #646464;border: 0;}
+.highlighted-courses .courses .course:hover, .highlighted-courses .courses .course:focus, .find-courses .courses .course:hover, .find-courses .courses .course:focus{background: #fff;box-shadow: none;border: none;}
+.courses-container .courses .course .course-info .course-title{padding: 0 15px;color: #3d3e3f;margin: 0;margin: 5px 0 35px 0;padding: 0 15px;font-size: 18px;font-weight: normal;line-height: 1.333;height: 85px;-webkit-line-clamp: 2;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;}
 
 @media (min-width: 992px){
 	#global-navigation .explore-course.authenticated{

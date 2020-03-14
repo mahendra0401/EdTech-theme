@@ -76,6 +76,10 @@ body.view-dashboard .content-wrapper{background: #F8F8F8;margin-top: 0; max-widt
 .highlighted-courses .courses .course:hover, .highlighted-courses .courses .course:focus, .find-courses .courses .course:hover, .find-courses .courses .course:focus{background: #fff;box-shadow: none;border: none;}
 .courses-container .courses .course .course-info .course-title{padding: 0 15px;color: #3d3e3f;margin: 0;margin: 5px 0 35px 0;padding: 0 15px;font-size: 18px;font-weight: normal;line-height: 1.333;height: 85px;-webkit-line-clamp: 2;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;}
 
+#static-content h1{font-family: 'Open Sans', sans-serif;font-weight: bold;font-family: auto;font-size: 38px;}
+.static-content {font-family: 'Open Sans', sans-serif;line-height: 22px;font-size: 16px;text-align: justify;}
+.static-content h4{color: #20a8cb;font-weight: bold;padding-bottom: 10px;}
+
 @media (min-width: 992px){
 	#global-navigation .explore-course.authenticated{
 		padding-top: 35px;
